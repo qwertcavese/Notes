@@ -70,6 +70,7 @@ react js:-
                 
                 code:-<-function name/-> (which is usually termed as component)
 
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
 
         REACT-ROUTER-DOM:-
                 it provides us the service to play with router domain i.e "https/localhost3000"
@@ -92,7 +93,42 @@ react js:-
 
                 now to play with components first make different components an then as we have call 
                 all the component in index.js we will import that components in app.js  
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        AXIOS:-
+                axios is inbuilt method just like react-router-dom to fetch api and ti also update,delete
+                and push api,so similarly like all other library first we have to install It
+
+                        code in cmd :-npm i react-axios
+
+
+                similary we also have to import axios in app.js file
+                how to use axios:-
+
+                        code:-axios.get("api link")
+                                .then((parameter)=>{setdata(parameter.key)}) (here key means key of map{}) 
+                
+                now here for eg lets assume
+                        const[data,setdata]=useState([]);
+                        where,
+                        data is parameter and setdata is function
+
+                        so we have store api data in setdata function because api gives
+                        data in map format so to print it we will use "useState"
+                        so, now data can also access api so we will write
+
+                        {data.map((value)=>{
+                                return(
+                                        <>
+                                        <tr><td>value.<-key of map-></td></td>
+                                        </>
+                                )
+                        })}
+
+                        now here,
+                        data.map is inbuilt property with array which returns value one by one
+                        and it is not map{} format so we store it in different parameter and then 
+                        print it.
 
 -----------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
 
