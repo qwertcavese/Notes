@@ -1,0 +1,194 @@
+        ARRAY:-
+    array index starts from 0
+    eg:-var arry=[1,55,2,5,5];
+        now in given array "arry" 1 has index zero and 55 has index two ans so on.
+
+-----------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
+
+
+MAP:-
+    element of map is written in curly brackets
+    eg:-var map1={name:a,age:b};
+            now here "name" is a key and "a" is value and elements of map can be called by value
+            i.e if we write map1.name we will get "a".
+            if map is made in array then also map has to be called by its key.
+
+    eg2:- var arry=[{name:a,age:b,status:false},{salary:q,address:t,status:true}];
+            now here the following map is in array "arry" so here "{name:a,age:b,status:false}" is fully zero index for array and it is also
+            fully one element for map respectively, Also here any one of the key of one element respresents as all
+            i.e if we say status==false it means it will consider full zero index. 
+
+
+
+                NOTE:-NODE JS IS COMPULSARY TO INSTALL AS REACT JS IS BASED ON IT
+
+-----------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
+
+
+API:-
+        api is client between server ans user
+        we can read,post,update and delete api through storing it on our personal server
+        api is in format of json(javascript object notation) which is a universal accepted fromat od data
+        to create our on server
+
+        step1:-create on json file with extension .json
+        step2:-create array in map in json file
+                eg:-{
+                        "id":[]
+                }
+        step3:-now open cmd and access json file with "cd 'foldername' "
+        step4:-now write "npx json-server <-json file name-> "
+        step:-it will give address of local host which is our file address
+
+-----------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
+
+
+react js:-
+        at first we need to create our own app to use react so, in cmd write following thing
+        step1:-npm create-react-app "app name"
+        step2:-after app is created go in app file and write
+                npm start
+                it will open our private development server
+
+        all the javascript code in react in written in inbuilt function name "app"
+        ans all the html code in written in "return" inside the empty brackets known as fragements
+        "<></>". this is because "return" can only retun one thing at a time but here if is written 
+        inside fragements then it can return full code.
+
+
+-----------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
+
+
+Git/Github:-
+        (git works on terminal/cmd)
+        we use git to so that group projects are made easy as it is easily accessible by everyone
+        In git we create repositries which can be public and private.
+        At first we have to install git to our system
+        if we do any changes in git it will show in our github account
+        now here we have to note that first we will do changes in our local machine and then
+        we will push that file to github account
+        so,
+
+                
+                
+                **THIS PROCESS WILL BE DONE WHEN WE MAKING CHANGES IN EXISTING REPO**
+
+
+        first:-we have to configure git so git can do changes in our github account
+                (done only one time when created new account )
+                                step1:-git config --global user.name <-our github account username->
+                                step2:-git config --global user.email <-our github account email->
+
+                
+                CLONE & STATUS
+        
+        clone:-cloning a repository on our local machine/our system because we have to make changes
+                in existing code present already in repository so first we will clone and then make 
+                changes in it
+                                code:-git clone <-link of repository->
+
+                we can see hidden fies in terminal through
+                                code:-dir /ah
+                        where, 
+                        ah:-all hidden files
+                now if we see that .git named file is present in our folder means we will able to make 
+                changes in repository through git
+        
+        status:-display the status of code
+                                code:-git status
+
+
+        if we do not do changes on local machine than status will show "branch is up to date"
+        if we do changes in our existing file than status will show "modified:"file name" "
+        if we make new file than status will show "untracked files"(these are those files which are note cloned from folder but made new by us in our local machine)
+
+        now after modifying and creating new files we need to add those changes to git statging area 
+        then commit it
+        after adding and commit we have to push it to git(push from local to global)
+
+                                        
+                                        
+                                         ADD & COMMIT
+
+        add:-add new or changed files to our working directory to the git staging area
+                               
+                                code:-git add <-file name->
+                                        or
+                                code:-git add . (if we want to add all files at once)
+                        
+       
+        commit:-It is a record of changed
+                               
+                                code:-git commit -m "message"
+                                where,
+                                -m stands for message
+
+
+
+                                        
+                                        PUSH
+        
+        after add and commit we need to push means upload local repo content to remote repo/global repo
+
+                                code:-git push origin main
+
+
+
+     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////           
+
+                
+                
+                 **IF WE ARE MAKING NEW REPO WE WILL FOLLOW FOLLOWING PROCESS**
+
+        when we create new folder in our local machine then first we have to initialise git in our folder
+        first go to that  folder using cd <-folder name-> then,
+
+         
+                                code:-git init (it will initialise git in our folder)
+        
+        then,we need to add new remote beacuse we are pushing in different repo
+
+                                code:-git remote add origin <-link of our new repo-> (here origin refers to name of our remote repo)
+                                                (in easy language to give path to our local repo of remote repo)
+                                code:-git remote -v ( to verify our remote repo)
+
+
+                                                                
+                                                                BRANCH
+
+                                code:-git branch (shows in which branch we are)
+
+       
+        we should rename branch name our create new branch
+        
+
+                                code:-git branch -M <-branch name that want-> (it changes branch name)
+                                        where,
+                                        M=new name of branch
+
+        
+        now we will push local repo to remote repo in reqiured branch
+
+                                code:-git push -u origin main
+                                        where,
+                                        -u refers to upstream which means if we want to push all files in same branch then we will use "-u" once and then by default everytime it will take same branch
+                                        origin refers to remote remo name
+                                        main refes to our branch name (it can be different)
+
+
+        some branch commands,
+
+                                code:-git branch (to check branch)
+                                code:-git branch -M <-branch name-> (to rename branch)
+                                code:-git checkout <-branch name-> (to navigate branch)
+                                code:-git checkout -b <-branch name-> (to create new branch)
+                                code:-git branch -d <-branch name-> (to delete branch)
+
+                                now eg:-if we want to push anything to branch name sujay then,
+                                        step1:-git init
+                                        step2:-git remote add origin <-new repo link->
+                                        step3:-git add .
+                                        step4:-git commit -m "<-any message->"
+                                        step5:-git checkout -b sujay
+                                        step6:-git push origin sujay
+                                         
