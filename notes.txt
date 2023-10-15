@@ -54,6 +54,44 @@ react js:-
         ans all the html code in written in "return" inside the empty brackets known as fragements
         "<></>". this is because "return" can only retun one thing at a time but here if is written 
         inside fragements then it can return full code.
+        Also react works with DOM which means we do not refresh full page we refresh
+        only components
+        components means different jsx files which we export and then it can be used in 
+        different files by importing it 
+
+                code to export:-export default <-function name->
+                code to import;-import <-function name-> from <-./foldername/jsx filename or component name->
+
+        now it is mandatory to keep both component file name and function name first letter capital
+        
+        In easy word we can say jsx file and functions inside it together makes component
+
+        to call components
+                
+                code:-<-function name/-> (which is usually termed as component)
+
+
+        REACT-ROUTER-DOM:-
+                it provides us the service to play with router domain i.e "https/localhost3000"
+                As it is a library first we have to install it so in cmd we will write commant
+                 
+                        code:-npm i react-router-domain
+
+                now in our app we have app.js,index.js and follwing files so ,
+                in index.js we have to import BrowserRouter library and also from index.js we have to remove
+                
+                 <React.Strict-mode>
+                        <App/>
+                 </React.Strict-mode>
+
+                        and add,
+
+                <BrowserRouter>
+                        <App/>
+                 </BrowserRouter>     
+
+                now to play with components first make different components an then as we have call 
+                all the component in index.js we will import that components in app.js  
 
 
 -----------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
