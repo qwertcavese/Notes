@@ -91,8 +91,32 @@ react js:-
                         <App/>
                  </BrowserRouter>     
 
-                now to play with components first make different components an then as we have call 
+                now to play with components first make different components and then as we have call 
                 all the component in index.js we will import that components in app.js  
+
+                for eg:-
+                        <Routes>
+                        <Route path='/about' Component={About1}/>
+                        </Routes>
+                
+                here as soon as "/about" is added after "https/localhost3000" we will redirect tp about page
+
+                
+                
+        NavLink:-
+                now navlink is part of react-router-dom in which onclick of that link we will automatic navigate to clicked 
+                components
+                lets say we click on "home" then it will navigate to home page 
+
+                        syntax:-
+                                <NavLink to="<-path (for eg:-"/about")->">about</NavLink>
+
+                                so onclicking about, address will automatically add "/about" after "https/localhost3000"
+                                and it will become "https/localhost3000/about", so from that automatically 
+                                route will be called and we will redirect at about page
+
+
+
         ////////////////////////////////////////////////////////////////////////////////////////////////////
 
         AXIOS:-
