@@ -1,44 +1,63 @@
+       
+  JAVASCRIPT:-     
+       
+       
+       
         ARRAY:-
-    array index starts from 0
-    eg:-var arry=[1,55,2,5,5];
+                array index starts from 0
+                 eg:-var arry=[1,55,2,5,5];
         now in given array "arry" 1 has index zero and 55 has index two ans so on.
 
 -----------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-MAP:-
-    element of map is written in curly brackets
-    eg:-var map1={name:a,age:b};
-            now here "name" is a key and "a" is value and elements of map can be called by value
-            i.e if we write map1.name we will get "a".
-            if map is made in array then also map has to be called by its key.
+        MAP:-
+                element of map is written in curly brackets
+                eg:-var map1={name:a,age:b};
+                now here "name" is a key and "a" is value and elements of map can be called by value
+                i.e if we write map1.name we will get "a".
+                if map is made in array then also map has to be called by its key.
 
-    eg2:- var arry=[{name:a,age:b,status:false},{salary:q,address:t,status:true}];
-            now here the following map is in array "arry" so here "{name:a,age:b,status:false}" is fully zero index for array and it is also
-            fully one element for map respectively, Also here any one of the key of one element respresents as all
-            i.e if we say status==false it means it will consider full zero index. 
+         eg2:- var arry=[{name:a,age:b,status:false},{salary:q,address:t,status:true}];
+                now here the following map is in array "arry" so here "{name:a,age:b,status:false}" is fully zero index for array and it is also
+                fully one element for map respectively, Also here any one of the key of one element respresents as all
+                i.e if we say status==false it means it will consider full zero index. 
 
 
 
                 NOTE:-NODE JS IS COMPULSARY TO INSTALL AS REACT JS IS BASED ON IT
 
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
 -----------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
 
 
-API:-
-        api is client between server ans user
-        we can read,post,update and delete api through storing it on our personal server
-        api is in format of json(javascript object notation) which is a universal accepted fromat od data
-        to create our on server
+        API:-
+                api is client between server ans user
+                we can read,post,update and delete api through storing it on our personal server
+                api is in format of json(javascript object notation) which is a universal accepted fromat od data
+                to create our on server
 
-        step1:-create on json file with extension .json
-        step2:-create array in map in json file
-                eg:-{
-                        "id":[]
-                }
-        step3:-now open cmd and access json file with "cd 'foldername' "
-        step4:-now write "npx json-server <-json file name-> "
-        step:-it will give address of local host which is our file address
+                step1:-create on json file with extension .json
+                step2:-create array in map in json file
+                        eg:-{
+                                "id":[]
+                         }
+                step3:-now open cmd and access json file with "cd 'foldername' "
+                step4:-now write "npx json-server <-json file name-> "
+                step:-it will give address of local host which is our file address
+
+
+
+        TO REFERSH PAGE:-
+        
+                syntax:-
+                        windows.location.reload(true);
+
+                 by default its value is false
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 -----------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
 
@@ -117,6 +136,23 @@ react js:-
 
 
 
+        Navigator:-
+                navigator is also part of react-router-dom and it is different from navlink as in navlink we navigate through
+                text but if we want to navigate onclicking button than we can use navigator
+                now first we should have to define routes which we have already mentioned above
+                then,
+
+                        syntax:-
+                                var <-name of variable->=useNavigate();
+
+                                so for eg:-
+
+                                var z=useNavigate();
+                                z("/about")
+
+                now in any button if we make arrow function and write z("/about") we will redirect 
+                to about page or component
+
         ////////////////////////////////////////////////////////////////////////////////////////////////////
 
         AXIOS:-
@@ -153,7 +189,47 @@ react js:-
                         data.map is inbuilt property with array which returns value one by one
                         and it is not map{} format so we store it in different parameter and then 
                         print it.
+        
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+        props:-
+                now if we want to pass any value or data from one component to another component
+                than we use props
+                now let say we want to pass data from app.jsx and do changes in display.jsx
+
+                then,
+                here we want to pass value of a to Display.jsx but it will be displayed in App.jsx by
+                calling component
+                        syntax:-
+                                function App(){
+
+                                var a=10
+                                }
+                                return(
+                                        <>
+                                                <Display value={a}/>  (value is a key which passes data of var a)
+                                        </>
+                                )
+
+
+                                (now as a display is receiver first we have to write props)
+                                function Display(props){
+                                        var z=props.value (here "z" contains data of a which is 10 so,
+                                                            we have stored it in "z" through props which is receiver
+                                                            of data and value is giver of data which is "a")
+                                        return(
+                                                <>
+                                                        <p>{z}</p>
+                                                </>
+                                        )
+                                }
+
+                now here we have to note the process that how it works as when we pass data to Display.jsx 
+                first it will take data and then Display.jsx will updates its content and than as Display.jsx 
+                is already called in App.jsx so we will able to see data which we have passed through props
+
+         
 -----------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
 
 
