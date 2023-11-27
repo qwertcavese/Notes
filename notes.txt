@@ -229,7 +229,17 @@ react js:-
                 first it will take data and then Display.jsx will updates its content and than as Display.jsx 
                 is already called in App.jsx so we will able to see data which we have passed through props
 
-         
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+REDUX:-
+        First install redux
+                syntax:- (In cmd) npm i redux react-redux
+
+        then,
+                import {createStore} from "redux" 
+
+        then,
+        store create store in variable
 -----------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
 
 
