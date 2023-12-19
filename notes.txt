@@ -8,7 +8,6 @@
                  eg:-var arry=[1,55,2,5,5];
         now in given array "arry" 1 has index zero and 55 has index two ans so on.
 
------------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
         //////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -29,7 +28,7 @@
                 NOTE:-NODE JS IS COMPULSARY TO INSTALL AS REACT JS IS BASED ON IT
 
         //////////////////////////////////////////////////////////////////////////////////////////////////////
------------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
+
 
 
         API:-
@@ -58,6 +57,34 @@
 
         //////////////////////////////////////////////////////////////////////////////////////////////////////
 
+QuerSelector:-
+        querySelector is just like document.getElementById(") but here difference it that ,with queryselector 
+        we can directly access class and id both ,we dont have to specify document.getElementById/classname(").
+
+                syntax:-
+                        document.querySelector("<-name of class or id with there selector i.e "." and "#"->")
+
+        eg:- lets say we have two paragraph tag 
+
+                <p id="p1">hello</p>
+                <p class="p2">hello</p>
+
+        so if we want data of first paragraph tag then we have to write,
+
+                document.querySelector("#p1")
+
+        
+        
+        similarly for second tag
+
+                document.querySelector(".p2")
+
+        
+        
+        now say we want to select both together then we can select like this way,
+
+                document.querySelectorAll("p")  (now here we have written "p" as a tag name and not with reference to
+                                                        classname or id)
 
 -----------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
 
