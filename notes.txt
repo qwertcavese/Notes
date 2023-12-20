@@ -86,6 +86,54 @@ QuerSelector:-
                 document.querySelectorAll("p")  (now here we have written "p" as a tag name and not with reference to
                                                         classname or id)
 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+css manipulation with DOM:-
+        Now DOM (document object model) refers to "document.getElementById/classname" and all etc
+        lets say we want to add and remove some classes in html on "onclick" event ,then we can do
+        it through DOM;
+
+                for eg:- <h1 class="header1">hello</h1>
+
+                        now we want to add new class say "header2" than we can do it with js logic through
+                        DOM
+
+                        syntax:-document.querySelector(".header1").classList.add("header2")
+
+                        (this above method will add on more to "h1" tag as we have used inbuilt function
+                                ".add()" and then we can use internal or external css on "header2" )
+
+                        
+                        
+                        similarly, to remove class
+
+                        syntax:-document.querySelector(".header1").classList.remove("header2")
+
+                        (this will remove class from our selected class which is "header1" in tag "h1")
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+addEventListner:-
+        It is method which passes two parameters ,one is event and second is function
+
+        eg:- we have button and we want to perform event on it
+
+                <button id="btn">click me</button>
+
+                now if we want to add event "onclick" and call function namely "add1()" so according
+                to first method we can do like this way  
+        
+                <button id="btn" onclick="add1()">click me</button>
+
+                
+                we can do same think with addEventListner method by this way
+
+                syntax:-
+                        var btnclick=document.querySelector("#btn");  (here first we have target button with its id)
+                        btnclick.addEventListner("click","add1()") (here "click" is event in reference to onclick
+                                                                        and "add1()" is function)
+
+
 -----------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
 
 
