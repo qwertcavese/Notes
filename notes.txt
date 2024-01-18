@@ -51,9 +51,28 @@
         TO REFERSH PAGE:-
         
                 syntax:-
-                        windows.location.reload(true);
+                        windows.location.reload(true);              
 
                  by default its value is false
+
+
+       //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Window:-now "window" is a inbuilt method which selects our window i.e our screen
+              so if we say "window.location.reload(true)" means our window will reload or say our
+              screen/page etc will reload
+
+              now window has many inbuilt methods and here are some exapmples
+
+                     syntax:-
+                            windows.location.reload(true);                           (it reloads page so code will execute again)
+                                   
+                            window.location.href="<-name of page we want to redirect->"  (it will redirect user to page mentioned)
+
+                            window.innerWidth      (target width of windows)
+
+                            window.innerHeight      (target height of windows)
 
         //////////////////////////////////////////////////////////////////////////////////////////////////////
 
