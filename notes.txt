@@ -153,6 +153,145 @@ addEventListner:-
                                                                         and "add1()" is function)
 
 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Objects:-      
+         Now object is inbuilt data structure which has "key:value" pair format which means it has keys and values
+        syntax:
+                var xyz={"id":"hello","age":18,"salary":150000}
+                now here object "xyz" has keys id,age,salary and their values are hello,18,150000 respectively
+
+                now we have to note here that just like array it does not have index so we cannot access it from
+                index and if we do not have index so we can say that we cannot apply loop into it too 
+                and if we want to access any values from object that we have to access it with key
+
+                for eg:-In above array if we want to access "hello" then we can access it with his key i.e "id"
+                        so we can write it in this way
+
+                       syntax:- var z=xyz.id
+                                so now here variable z has "hello"
+
+                now we can use loop in object also but it has different methods 
+
+                for eg:- lets sat we have object
+
+                         var xyz={"id":"hello","age":18,"salary":150000}
+
+                         so to apply loop on it we can use one of the methods like:-
+
+                                syntax:- var arry=Objects.values(xyz)    (It will return all values of object xyz to arry in array format)
+
+                                        similarly if we write "keys" instead of "values" it will return all keys in array format
+                                        and here we have to note that "Objects" is inbuilt method and "xyz" is name of object
+
+                now let say we have to store any data in object "xyz" so we can do it like this way:-
+
+                        synatx:-xyz["phone"]=123
+                                        this will add one more object in "xyz" whose key is "phone" and value is "123"
+
+                to delete,
+
+                        synatx:-delete xyz["id"]
+                                        it will delete key "id" and his value "hello"
+
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Onchange Event:- 
+        now just like "onclick" "Onchange" is also event as "onclick" triggers on clicking any button of html page
+        "onchage" triggers when wwe make any changes in "inputfield".
+        In easy terms if we type anything on keyboard then on pressing of each key we change state of our word
+        for eg:-If we want to write "hello"
+        then we can say that from "h" to "he" state changes similarly state will keep changing till we type
+        so here we can say that state form "h" changes to "he" "hel" "hell" "hello" etc and so on
+
+
+        now if we want to use onchange we can use it like this way
+        lets say we have input field of type text so we will use onchange in following way in react js
+
+
+                                syntax:-
+                                        const[data,setdata]=useState(")
+                                        eg:-<input type="text" value={data} onchage={(e)=>{
+                                                setdata(e.target.value)
+                                        }} /> 
+
+                                now first we have used useState hook which passes on function and on variable and then
+                                we have connected "data" with input type so now this input has become in controlled 
+                                form and we can't anything in it till we changes state through "onchage" 
+                                and after that we have stored "e.target.value" in "setdata" so whatever we will 
+                                write will be stored in "data" and we can used it 
+
+                                now let's see have we are able store value in "data" as state changes
+                                first we have used "onchange" event which has "arrow" function which passes
+                                "e" as parameter so whatever we will type in keyboard it will stored one by one in
+                                "e" and it will store in useState hook because we have used 
+                                "e.target.value" which means "e" is letters type in keyboard "target" is on which we have used 
+                                "onchange" i.e input box and "value" means value we write inside input box
+
+
+functions:-
+        now if we want some piece of code to use repeteadly then rather than writting it everytime we can store it in
+        functions and functions are not executed directly it is executed only when it is called
+
+                                syntax:- function xyz(){
+                                        console.log("hello")
+                                }
+                                xyz();
+
+                                now here we can se that have make function namely "xyz" and we have called it afterward
+                                i.e "xyz()" so it will be executed and wherever we will call this function we will get 
+                                output "hello" in console
+
+                here is one more type of function namely arrow function
+
+                                syntax:- var xyz=()=>{
+                                        console.log("hello")
+                                }
+
+                                this is also function whose name is xyz
+ 
+
+
+        Callback functions:-
+                callback functions are those functions which are executed without calling then and we use it inside functions and it doesnot
+                have names
+
+                        synatx:- function abc(function(
+                                 console.log("hello")
+                        ))
+
+                        here we have make callback function inside function "abc" if we call "abc" function like this way
+                        "abc()" then function inside it will akso called automatically
+
+                        we san also use arrow function as callback
+
+                        syntax:-function abc(()=>{
+                                console.log("hello")
+                        })
+                        here we have used arrow function inside function "abc"
+
+
+        
+         now we can pass parameters also in functions
+
+                        eg:-function xyz(a){
+                                return console.log(a);
+                        }
+
+                        xyz("hello")
+
+                        now here we can see that we have declared variable "a" directly inside function "xyz" and it is 
+                        known as parameter and we have assigned value to "a" upon calling a function 
+                        i.e "hello" which is known as argument so this function will print "hello" in console
+                        and we have also use "return" keyword inside it which means it will return us what
+                        we have written in it 
+
+                        now we have to note that whatever we write in function but it will only return
+                        us that what we have written in "return"
+ 
+
 -----------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
 
 
@@ -325,15 +464,6 @@ react js:-
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-REDUX:-
-        First install redux
-                syntax:- (In cmd) npm i redux react-redux
-
-        then,
-                import {createStore} from "redux" 
-
-        then,
-        store create store in variable
 -----------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
 
 
