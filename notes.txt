@@ -230,6 +230,7 @@ Onchange Event:-
                                 "e.target.value" which means "e" is letters type in keyboard "target" is on which we have used 
                                 "onchange" i.e input box and "value" means value we write inside input box
 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 functions:-
         now if we want some piece of code to use repeteadly then rather than writting it everytime we can store it in
@@ -291,6 +292,62 @@ functions:-
                         now we have to note that whatever we write in function but it will only return
                         us that what we have written in "return"
  
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+OOPS:-
+        oops in object oriented programing which means object which has key and value now
+        js is scripting language so we can use oops inside by creating class 
+        Now, whats the importance of class, so we can say that it makes code to using less 
+        memory and one of the best feature is that we can store one than more value in
+        one variable at a time
+
+        now lets say we have class "abc" so inside it we have to make global variable
+        but it is not possible in js so we use "this" keyword which means
+        that here "this" refers to its object we have connected it with or if it is not connected 
+        with any any class than it refers to its parent class
+
+        syntax:-
+                class abc{
+                        constructor(v){
+                                this.value=v;
+                                this.x=1;
+                                console.log(this.value)
+                        }
+                }
+
+                var obj=new abc(5)
+
+
+        now here we have made one class name abc and we have make constructor inside it
+        which means now constructor have two values one is "value" and another is "x"
+
+        now "this." makes variable global so now that variable can be used inside class "abc"
+        anywhere and we have given "v" parameter to constructor and than we have connected
+        it with global variable "value"
+
+        class cannot be directly accessed anywhere ,first we have to make object of it
+        so we have make its object named "obj" 
+
+
+
+                syntax to make object of class:-
+                        var <-object name->=new <-class name->
+
+
+        "new" keyword refers to making of new object of class we want
+
+        so if we want tho access "value" outside class so we can access it like this way
+
+                syntax:-
+                        var obj=new abc(5);
+                        var b=obj.value;
+
+                        similary
+
+                        var c=obj.x;         (returs "1" beacuse "x" has value "1")
+
+
 
 -----------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
 
