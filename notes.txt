@@ -348,6 +348,9 @@ OOPS:-
                         var c=obj.x;         (returs "1" beacuse "x" has value "1")
 
 
+       also as said that class can store two value at a time so here we can say that class
+       name "abc" have constructor of two variables "value" and "x" as we will acces it with 
+       object "obj". "obj" can store two value one is "obj.value" and another is "obj.x"
 
 -----------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
 
