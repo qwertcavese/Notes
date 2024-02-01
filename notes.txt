@@ -408,7 +408,7 @@ react js:-
 
                 for eg:-
                         <Routes>
-                        <Route path='/about' Component={About1}/>
+                           <Route path='/about' Component={About1}/>
                         </Routes>
                 
                 here as soon as "/about" is added after "https/localhost3000" we will redirect tp about page
@@ -445,6 +445,29 @@ react js:-
 
                 now in any button if we make arrow function and write z("/about") we will redirect 
                 to about page or component
+
+                Navigate can also pass data along with it to the component we navigate
+
+                lets say we have to navigate to "/about" component and pass some data
+                so following syntax is to be follwed
+
+                        syntax:-
+                                var a=5;     (it is data we want to pass)
+                                var navigate=usenavigate();
+
+                                navigate("/about",{
+                                        state:a;
+                                })
+
+                now navigate has inbuilt object of name "state" so data will be passed
+                in "about" component in object so to use that data first we have to get it
+                and the dta send through navigate is accessed theough "useLocation()"
+
+                        syntax:-
+                                const z=useLocation();
+
+                                var x=z.state   (data is passed in object format and we have stored it in "x")
+
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -523,6 +546,34 @@ react js:-
                 is already called in App.jsx so we will able to see data which we have passed through props
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+        useRef():-
+                useRef is also hook and it is used to give reference of the element we want to connect
+                in simple words if want to connect input field than rather than using DOM syntax
+                we can connect it with useRef 
+                here point is to be note tha useRef returns object whose key is current
+                so if we want to perform any event on useRef connected element than it can 
+                be used through ".current" keyword as it is key
+
+                for eg we have to connect inputfield with useRef than,
+
+                        synatx:-
+                                const inputField=useRef()
+
+                                <input type="text"
+                                ref={inputField}                (name of our variable)
+                                /> 
+
+                so now it is connected with our "inputField" and we can perform 
+                add any addEventListner to "input" with the help of "useRef()"
+                here if we log "inputField"
+                it will show whole "input" and lets sy we have to use it to get value
+
+                so it can be done like this
+                        
+                        synatx:-
+                                inputField.current.value    (because useRef() returns object with default key "current")
 
 -----------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
 
