@@ -231,6 +231,42 @@ Onchange Event:-
                                 "onchange" i.e input box and "value" means value we write inside input box
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+        
+ternary operator:-
+        ternary operator is used to simplify "if else" condition
+
+        lets take example that we want if else condition that whether value is "5" or not
+        then normally we will write this way
+
+                syntax:-        
+                        var value=5;
+                        if(value==5){
+                                return console.log("true")
+                        }
+                        else{
+                                return console.log("false")
+                        }
+
+        now we can write same code in single line with ternary operator
+
+                synatx:-
+                        var value=5;
+                        var a= return value==5 ? console.log("true") : console.log("false) ;
+
+        now in given above code if value is 5 than a will get "true" else "false"
+
+        now "return" is mandatory to use while using ternary operator
+
+        here lets understand synatx of code
+
+                first before "?" we will write condition and if condition will be true than
+                code before ":" will be executed else code after ":" will be executed
+        
+        
+        
+        
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 functions:-
         now if we want some piece of code to use repeteadly then rather than writting it everytime we can store it in
@@ -711,3 +747,16 @@ Git/Github:-
                                         step5:-git checkout -b sujay
                                         step6:-git push origin sujay
                                          
+-----------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
+
+Vite+React :-
+        vite + react app is another method of making react app with additional configuration of vite app
+        with it
+
+        syntax:- (In cmd)
+                1. npm create vite@latest
+                2. (we will get option to keep our project name)
+                3. (we will get option to select framework and we will select "react")
+                4. cd <-project name/app name->
+                5. npm install (node modules will be installed in it)
+                6. npm run dev -- --host (this gives us link of both local host and on network react development server)
