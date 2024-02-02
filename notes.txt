@@ -444,7 +444,7 @@ react js:-
 
                 for eg:-
                         <Routes>
-                           <Route path='/about' Component={About1}/>
+                           <Route path='/about' element={<About1/>}/>
                         </Routes>
                 
                 here as soon as "/about" is added after "https/localhost3000" we will redirect tp about page
