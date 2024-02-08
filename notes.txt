@@ -330,6 +330,49 @@ functions:-
  
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+Async/Await and Try/Catch:-
+        Now first we will understand try/catch,Try/Catch is method where we write code in try and if  
+        any errors come in try block then it will directly go to catch block which catches
+        errors
+
+                syntax:-
+                        try{
+                                (code we want to execute)
+                                return (what we want to return)
+                        }
+                        catch(error){
+                                console.log(error)
+                        }
+
+        if any error comes in try{} block than from the part of code where we get error from that
+        part it will go to catch
+
+
+        Now, Async/Await.It is a method which is used when function is asyncronise which means
+        it takes some time to return or say it is not definite so we have to use await also
+        It is mostly used in api calling
+        Await makes the code wait till the all the process is not completed
+
+                syntax:-
+                        async function z(){
+                                const apiData=await axios.get(<-link of api->)
+                                return apiData        (it will return apiData )
+                        }
+                
+        and in similar code if we use try/catch also
+
+                syntax will be like this way:-
+                        try{
+                               const response= z();           (it will call function z() where we have called api
+                                                                and returned apiData so it will be returned to
+                                                                response here )
+                        }
+                        catch(err){
+                                console.log(error)
+                        }
+        
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 OOPS:-
         oops in object oriented programing which means object which has key and value now
