@@ -373,6 +373,33 @@ Async/Await and Try/Catch:-
                         }
         
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+Template Literal:-
+        it is one of the method of printing anything or say to access valu easily if in some cases we are not
+        able to access value from any variable than we can us Template Literal
+
+                syntax:-
+                        `${<--variable name-->}`    (Now it not invertes commas it is backtick located under "esc" key in keyboard)
+        
+        eg:-lets say we have to do sum and print it in log
+
+                var num1=5;
+                var num2=5;
+                var result=num1+num2;
+                console.log("the ans of" +num1+ "and" +num2+ "is" +result)
+
+        Now, by using template Literal
+
+                var num1=5;
+                var num2=5;
+                var result=num1+num2;
+                console.log(`the ans of ${num1} and ${num2} is ${result}`)
+        
+        as "num1" "num2" and "result" have values we will write it inside curly brackets and use "$" before
+        and we will get same ans as above
+        
+        
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 OOPS:-
         oops in object oriented programing which means object which has key and value now
