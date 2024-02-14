@@ -330,6 +330,55 @@ functions:-
  
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+            
+session/local Storage:-
+        sessionStorage and localStorage is used to store data on browser.difference is that
+        sessionStorage stores data till the session is not ever i.e till the browser is not closed 
+        and localStorage stores data life time.
+
+        synatx to remove,get and set data in storages
+
+                synatx:-
+                        sessionStorage.setItem("<--key-->","<--value-->")              (to set item)
+                        sessionStorage.removeItem("<--key of data which we want to remove -->")       (to remove item)
+                        sessionStorage.getItem("<--key of data which we want to get -->")       (to get item)
+
+                similarly for localStorage
+
+                synatx:-
+                        synatx:-
+                        localStorage.setItem("<--key-->","<--value-->")              (to set item)
+                        localStorage.removeItem("<--key of data which we want to remove -->")       (to remove item)
+                        localStorage.getItem("<--key of data which we want to get -->")       (to get item)
+
+                eg:-
+                        sessionStorage.setItem("name","sujay)          (set data)
+                        sessionStorage.getItem("name")                 (gives data i.e "sujay" in this case)
+                        sessionStorage.removeItem("name")              (removes data)
+
+        similar for local storage also
+
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+cookies:-
+        cookies also stores data but it also stores it server and we ran remove it whenever we want        
+        
+        synatx:-
+                (to make cookies)
+                document.cookie="name=sujay"    (name is key and sujay is value)
+        
+                (to delete it whenever we want)
+                document.cookie="name=sujay; expires=<--date and time format-->"
+
+                (to access or get cookies)
+                var x=document.cookie;  (it will store all cookies in "x")
+
+                (to update cookies)
+                 document.cookie="name=sujay,xyz,abc" (update cookies)
+        
+        
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////
         
 Async/Await and Try/Catch:-
         Now first we will understand try/catch,Try/Catch is method where we write code in try and if  
@@ -458,7 +507,33 @@ OOPS:-
        name "abc" have constructor of two variables "value" and "x" as we will acces it with 
        object "obj". "obj" can store two value one is "obj.value" and another is "obj.x"
 
------------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
+       now as said that ".this" refers object as well make a global variable so we can use it 
+       without class also
+
+        for eg:-lets say if we make any function with parameter "x" but to use "x" outside
+        function we have to make global variable and then we have to store "x" of function 
+        to global variable but with the help of ".this" keyword we can directly use it
+        outside the function
+
+                syntax:-
+                        function sum1(v){
+                                this.value=v;
+                        } 
+                        sum1(5)
+                        console.log(this.value) (it will give us 5 as we have pass it in parameter and then made it global)
+
+        if we want to do it without ".this" method than we can do it like this way
+
+                syntax:-
+                        var value=0;
+                         function sum1(v){
+                                value=v;
+                        } 
+                        sum1(5)
+                        console.log(value) 
+                        
+                        
+---------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
 
 
 react js:-
