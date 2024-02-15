@@ -449,6 +449,67 @@ Template Literal:-
         
         
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+ setInterval and setTimeout:-
+        It is a method which runs code in time we have prescribed it takes two parameters
+        one is "function" and other is "time" is "ms" 
+        the only difference is that setTimeout runs one time and setInterval runs continuously
+        after every described time lapse
+
+                syntax:-
+                        setTimeout(()=>{
+                                <--code we want to execute-->           (5000 means 5000ms that is 5 seconds)
+                        },5000)       
+        
+        similarly for setInterval
+
+                syntax:-
+                        setInterval(()=>{
+                                <--code we want to execute-->           (5000 means 5000ms that is 5 seconds)
+                        },5000)       
+        
+        now lets say we want to clear setTimeout or setInterval then we can do that also
+        but first we have to store this function in variable
+
+        for setTimeout
+                synatx:-
+                        var timer=setTimeout(()=>{
+                                <--code we want to execute-->           (5000 means 5000ms that is 5 seconds)
+                        },5000)  
+
+                        clearTimeout(timer)  (as we have store setTimeout in var "timer" that we can use it for clearTimeout)
+
+        similarly for setInterval
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+ onmousemove and onkeydown event:-
+        onmousemove:-Triggers when we move mouse or say curson
+        onkeydown:-Triggers when we press any key on keyboard
+
+                        onmousemove syntax:-
+                                window.addEventListener("mousemove",()=>{
+                                        <--code we want to execute-->
+                                })
+
+        
+                        onmousemove syntax:-
+                                window.addEventListener("keydown",(e)=>{
+                                        if(e) resetTimer();
+                                })
+
+                        (here we have took "e" as parameter because "e" represents key pressed on keyboard
+                        and key pressed will be passed to "e" of arrow function whose parameter we have 
+                        kept "e")
+
+
+
+
+        (here we have used window because window represents whole screen of our device and we want 
+        to addEventListener on it)
+        
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 OOPS:-
         oops in object oriented programing which means object which has key and value now
