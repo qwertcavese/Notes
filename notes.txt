@@ -510,6 +510,39 @@ Template Literal:-
         
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+Spread Operator:-
+        spread operator is ES6 i.e an advance and convient way of performing some functions in js
+        and spread operator is one of it.It copies old data of array and adds new array along with it
+
+        now lets say we have an array and we have to push something in it then we have push
+        method and also we can use spread operator
+
+        eg:-
+                First normal,
+
+                syntax:-
+                        var arry=[1,2,5,3]
+                        arry.push(8)   (it will push 8 to arry and return us modified arry)
+
+                this same thing can be done like this way;
+
+                syntax:-
+                        var arry=[1,2,5,3]
+                        var newNum=8;
+                        
+                        arry=[...arry,newNum]
+
+                        
+                        now here first "...arry" will copy all data of "arry" in assigned variable   
+                        i.e "arry" and then it will also add "newNum" afterward if we will add one 
+                        more value to "arry" than now "arry" already has "8" so it will copy it also
+                        and then it will store new value which we will insert
+        
+        
+        
+        
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 OOPS:-
         oops in object oriented programing which means object which has key and value now
