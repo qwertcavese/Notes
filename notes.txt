@@ -76,6 +76,13 @@ Window:-now "window" is a inbuilt method which selects our window i.e our screen
 
         //////////////////////////////////////////////////////////////////////////////////////////////////////
 
+navigator:-
+        as "window" refers to our "screen" i.e "BOM" similary "navigator" refers to our device;
+        that is it gives information of "wifi,bluetooth,os" etc 
+
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
 QuerSelector:-
         querySelector is just like document.getElementById(") but here difference it that ,with queryselector 
         we can directly access class and id both ,we dont have to specify document.getElementById/classname(").
@@ -187,12 +194,12 @@ Objects:-
                 now let say we have to store any data in object "xyz" so we can do it like this way:-
 
                         synatx:-xyz["phone"]=123
-                                        this will add one more object in "xyz" whose key is "phone" and value is "123"
+                                        (this will add one more object in "xyz" whose key is "phone" and value is "123")
 
                 to delete,
 
                         synatx:-delete xyz["id"]
-                                        it will delete key "id" and his value "hello"
+                                        (it will delete key "id" and his value "hello")
 
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////
