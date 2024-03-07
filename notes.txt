@@ -753,6 +753,40 @@ react js:-
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+HOC/wrapper function:-
+        high order component or wrapper function is method in which one component is wrapped or placed inside
+        another component it is used when we have to use any code so many times ,
+        so we can make component of that code and then wrap another components inside it
+        now wrapper function and inbuilt key named "children" which stores html/rendering code
+        of wrapped component
+
+            eg:-lets say component "A" has code which we have to use many times so we and lets take assumption
+                that we have to use it in component "B"
+
+                        syntax:-
+                                import "A" from '../components/WrapperA'   (name of component)
+
+                                function B(){
+
+                                      return  (
+                                        <A>
+                                        (code of "B" component)
+                                        </A>
+                                        )
+                                }
+
+
+                                         ( And in "A" component)
+
+                                
+                                
+                                function A(props){
+                                        return(
+                                                {props.children}        (it will render all data of component "B")
+                                        )
+                                }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
         AXIOS:-
                 axios is inbuilt method just like react-router-dom to fetch api and ti also update,delete
                 and push api,so similarly like all other library first we have to install It
