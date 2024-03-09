@@ -546,9 +546,34 @@ Spread Operator:-
                         more value to "arry" than now "arry" already has "8" so it will copy it also
                         and then it will store new value which we will insert
         
+
+        spread operator also works on Objects
+
+                synatx:-
+                        var obj={id:1,name:"sujay"}
+
+                        var z={...obj}          (Now "z" is also object with same data of "obj")
+
+
+                
+                now lets say we want to add new data to object then we can do it thid way,
+
+                        syntax:-
+                                var z={...obj,age:15}   (It will "age:15" in "z" but not in "obj")
         
-        
-        
+                
+                
+                now if we wanted to update data of object than also same way
+                        
+                         syntax:-
+                                var z={...obj,id:10}   (It will update "id" from "1" to "10")
+
+
+
+
+
+
+
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 OOPS:-
