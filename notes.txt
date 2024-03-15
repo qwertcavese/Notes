@@ -1091,6 +1091,7 @@ CSS:-
                                 (this is when we want to select element using class)
 
 
+     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////           
 
 
 variable in css
@@ -1117,3 +1118,21 @@ variable in css
 
                         (this is synatx to use variable,here first we have to write "var()" keyword
                           and then use variable inside it)
+
+
+     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////           
+
+
+important:-
+        "important" keyword is used when we want to use css forcefully
+
+                synatx:-
+                        <--selector-->{
+                                <--css property--> !important
+                        }
+
+                eg:-
+
+                        .id-head{
+                                color:red !important;
+                        }
