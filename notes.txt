@@ -1065,3 +1065,55 @@ Vite+React :-
                 4. cd <-project name/app name->
                 5. npm install (node modules will be installed in it)
                 6. npm run dev -- --host (this gives us link of both local host and on network react development server)
+
+-----------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
+CSS:-
+        cascading styling sheet is used to style our website
+        
+                syntax:-
+                        lets say we have,
+                                
+                                <h1 id="id-head" class="class-head">hello</h1>
+
+                        so to style it for id use "#" and for class use "."
+
+                                #id-head{
+                                        color:red;
+                                }
+
+                                (this is when we want to select element using id)
+                                
+                                
+                                .id-head{
+                                        color:red;
+                                }
+
+                                (this is when we want to select element using class)
+
+
+
+
+variable in css
+
+
+                syntax:-
+                        :root{
+                                --<--variable name-->:<--css property-->;
+                        }
+
+                        (we are targeting root and we have to declare var name)
+
+                
+                eg:-
+                        :root{
+                                --a:red;
+                        }
+
+                        (now we set color of heading tag)
+
+                        #id-head{
+                                color:var(--a);
+                        }
+
+                        (this is synatx to use variable,here first we have to write "var()" keyword
+                          and then use variable inside it)
