@@ -490,6 +490,29 @@ Template Literal:-
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////
         
+Currying:-
+        Currying is concept in js used for conditional code execution , In simple words Currying is used 
+        when we have to execute some code with some conditions
+
+        lets say we have to perform sum of three numbeers but every number is derived from different sources
+        so in that wwe can not perform sum till all three numbers are derived
+
+                syntax:-
+                        function sum(a){
+                                return function(b){
+                                        return function(c){
+                                                return a+b+c;
+                                        }
+                                }
+                        }
+        
+                        var result=sum(5)(10)(15)               (now as we can access "sum" function this way where first "()" will 
+                                                                 be considered "a" and second "()" will be considered "b" and so on)
+
+                        console.log(result)
+        
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
  onmousemove and onkeydown event:-
         onmousemove:-Triggers when we move mouse or say curson
         onkeydown:-Triggers when we press any key on keyboard
