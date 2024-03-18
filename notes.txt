@@ -1159,3 +1159,12 @@ important:-
                         .id-head{
                                 color:red !important;
                         }
+
+-----------------x----------------------x---------------------x-------------------------x--------------------x-------------------------x----------------------------------------------------x------------------------------------------------x
+
+
+Delpoment:-
+        deploy means to make our website live, so to deploy website first we have to make build to website with commands
+        "npm run build" in terminal of the folder of our website then file created we can upload it to "netlify" website etc
+
+        In vite app our builf file will be created with name "dist" 
