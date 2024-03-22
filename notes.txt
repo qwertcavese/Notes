@@ -274,6 +274,20 @@ ternary operator:-
         
         
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+Math methods:-
+        there are various methoda in js which helps to solve mathematical errors in js and they are used using 
+        Math keyword
+
+        eg:-If we want any number round off then we can use "Math.floor()"
+
+        similary "Math.random()" is used to give random numbers but it only gives numbers between 0 and 1
+        so we can multiply it with 10,100 etc to get random numbers between 1 to 10 and 1 to 100 respectively
+
+        now as all this are inbuilt function so "()" is necessary
+        
+        
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 functions:-
         now if we want some piece of code to use repeteadly then rather than writting it everytime we can store it in
